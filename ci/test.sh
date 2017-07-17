@@ -2,6 +2,8 @@
 
 set -e -x
 
+ls
+
 pushd flight-school
   bundle install
   bundle exec rspec
