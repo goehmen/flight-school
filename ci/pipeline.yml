@@ -13,3 +13,10 @@ jobs:
   - task: tests
     file: flight-school/build.yml
 
+- name: test-app2
+  plan:
+  - get: flight-school
+    trigger: true
+  - task: tests
+    file: flight-school/build2.yml
+
